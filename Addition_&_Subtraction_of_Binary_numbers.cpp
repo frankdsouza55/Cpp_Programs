@@ -31,7 +31,7 @@ int main()
         sb++;
         diff[i]=a[i]^b[i]^br;
         br=(~a[i]&b[i])|(~(a[i]^b[i]))&br;      //for performing a-b
-//        br=(a[i]~&b[i])|(~(a[i]^b[i]))&br;      //for performing b-a
+//        br=(a[i]&~b[i])|(~(a[i]^b[i]))&br;      //for performing b-a
         db++;
     }
     reverse_array(sum,sb);
