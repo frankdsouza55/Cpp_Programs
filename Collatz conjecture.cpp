@@ -6,7 +6,7 @@ int main()
     long int n,high=1;
     cout<<"\nEnter a positive number : ";
     cin>>n;
-    do
+    while(n!=1)
     {
         if(n>high)
             high=n;
@@ -16,7 +16,7 @@ int main()
             n=n/2;
         else
             n=3*n+1;                        //n is odd
-    }while(n!=1);
+    }
     cout<<"\n\nTotal steps = "<<steps;
     cout<<"\nHighest number reached = "<<high<<endl;
     return 0;
